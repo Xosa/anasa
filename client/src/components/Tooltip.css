@@ -1,0 +1,17 @@
+.floating-tooltip {
+  position: absolute;
+  background-color: #111;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 8px;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.2);
+  z-index: 10;
+  font-size: 14px;
+  max-width: 200px;
+  pointer-events: none;
+}
+
+.floating-tooltip.top-right {
+  top: 60px;
+  right: 30px;
+}

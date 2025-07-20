@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap");
+
+.timelapse-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  font-family: sans-serif;
+  color: #fff;
+  background: #000;
+  min-height: 100vh;
+  background: url("/public/assets/space.jpg") repeat center center;
+}
+
+.timelapse-title {
+  font-family: "Orbitron", sans-serif;
+  font-size: 3rem;
+  text-align: center;
+  color: #ffffff;
+  margin: 2rem auto 1rem auto;
+  letter-spacing: 2px;
+  text-shadow: 0 0 6px #ffffff99, 0 0 12px #ff6f6155, 0 0 18px #ffcc7044;
+  animation: flicker-glow 4s ease-in-out infinite alternate;
+  max-width: fit-content;
+}
+
+@keyframes flicker-glow {
+  0% {
+    text-shadow: 0 0 5px #ffffff88, 0 0 10px #ff6f6144, 0 0 15px #ffcc7033;
+  }
+  100% {
+    text-shadow: 0 0 8px #ffffffaa, 0 0 14px #ff6f6166, 0 0 20px #ffcc7055;
+  }
+}
+
+.timelapse-subtitle {
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.1rem;
+  text-align: center;
+  color: #ccc;
+  margin: 0 0 1.5rem 0;
+  text-shadow: 0 0 6px #666666aa;
+  max-width: 600px;
+  line-height: 1.4;
+  letter-spacing: 1px;
+  user-select: none;
+}
+
+.photo-viewer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-height: 80vh;
+  padding: 1rem;
+  box-sizing: border-box;
+  font-family: "Orbitron", sans-serif;
+  color: #eee;
+  text-align: center;
+  /* allow flex children to shrink if needed */
+}
+
+.photo-viewer img {
+  max-width: 90vw;
+  /* max height is viewport minus approx 4rem for texts + padding */
+  max-height: calc(80vh - 4rem);
+  object-fit: contain;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  margin-bottom: 0.5rem;
+  flex-shrink: 1; /* allow shrinking if necessary */
+}
+
+.photo-viewer p {
+  margin: 0.2rem 0;
+  line-height: 1.2;
+  font-size: 1rem;
+  flex-shrink: 0; /* prevent shrinking so texts stay visible */
+}
+
+.controls {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.photo-viewer img {
+  max-width: 90vw;
+  max-height: 70vh;
+  border-radius: 8px;
+}
+.photo-viewer p {
+  margin: 0.2rem;
+}
+.error {
+  color: #f55;
+}
+
+body,
+html {
+  overflow-y: auto;
+  height: 100%;
+  margin: 0;
+}

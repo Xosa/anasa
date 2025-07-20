@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: backend
+    env: node
+    repo: https://github.com/Xosa/anasa
+    branch: main
+    rootDir: server
+    buildCommand: npm install
+    startCommand: node index.js
+    envVars:
+      - key: PORT
+        value: 8080
+
+  - type: web
+    name: frontend
+    env: static
+    repo: https://github.com/Xosa/anasa
+    branch: main
+    rootDir: client
+    buildCommand: npm run build
+    staticPublishPath: build
+    envVars:
+      - key: API_BASE_URL
+        value: https://backend.onrender.com
