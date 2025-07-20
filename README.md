@@ -2,7 +2,7 @@
 
 # Anasa
 
-Anasa is a cosmic journey app that reveals **your cosmic path** for a specific date that was significant in your life. Using NASA's API, it showcases amazing happenings in the universe on that date — including the Astronomy Picture of the Day, Mars rover photos, asteroid data, and even tarot readings to add a mystical touch. Explore how the cosmos was aligned at your special moment!
+Anasa is a cosmic journey app that reveals **your cosmic path** for a specific date that was significant in your life. Using [NASA's API](https://api.nasa.gov/), it showcases amazing happenings in the universe on that date — including the Astronomy Picture of the Day, Mars Rover photos, Asteroid data, and even tarot readings to add a mystical touch. Explore how the cosmos was aligned at your special moment!
 
 ---
 
@@ -17,8 +17,9 @@ Anasa is a cosmic journey app that reveals **your cosmic path** for a specific d
 
 ## Live Demo
 
-FE deployment: [https://anasa-cosmos.vercel.app](https://anasa-cosmos.vercel.app)
-BE deployment: [https://anasa.vercel.app](https://anasa.vercel.app) e.g. GET https://anasa.vercel.app/api/rover?date=2025-07-06
+- FE deployment: [https://anasa-cosmos.vercel.app](https://anasa-cosmos.vercel.app)
+
+- BE deployment: [https://anasa.vercel.app](https://anasa.vercel.app) e.g. GET https://anasa.vercel.app/api/rover?date=2025-07-06
 
 ---
 
